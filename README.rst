@@ -1,4 +1,4 @@
-.. image:: docs/_static/logo.png
+.. image:: _static/logo.png
 
 |
 
