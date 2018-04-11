@@ -13,7 +13,7 @@ Ideally, we would have your module added to the main codebase: this ensures
 consistency of the code and continuous testing. However, there are several
 reasons why making your own repository could be useful:
 
-- compliying to OGGM's strict testing rules can be annoying, especially in the
+- complying to OGGM's strict testing rules can be annoying, especially in the
   early stages of development of a model
 - with you own repository you have full control on it's development while
   still being able to use the OGGM workflow and multiprocessing capabilities
@@ -25,7 +25,7 @@ reasons why making your own repository could be useful:
 - etc.
 
 Before writing your own module we recommend to contact us to discuss the best
-path to follow for your specific case.
+path to follow in your specific case.
 
 How does this module work?
 --------------------------
