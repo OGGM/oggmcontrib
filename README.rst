@@ -31,6 +31,7 @@ How does this module work?
 --------------------------
 
 This module is a template. It implements two very simple use cases:
+
 - adding a new "bed inversion" task based on volume-area-scaling but using the
   OGGM preprocessing workflow
 - using a custom mass-balance model and apply it to OGGM's ice-dynamics model
