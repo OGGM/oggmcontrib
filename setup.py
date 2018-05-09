@@ -1,6 +1,7 @@
-"""Setup file for the Salem package.
+"""Setup file for the Dummy-Module package.
 
-   Adapted from the Python Packaging Authority template."""
+   Adapted from the Python Packaging Authority template.
+"""
 
 from setuptools import setup, find_packages  # Always prefer setuptools
 from codecs import open  # To use a consistent encoding
@@ -143,6 +144,7 @@ def file_walk(top, remove=''):
     for root, dirs, files in walk(top):
         for file in files:
             yield path.join(root, file).replace(remove, '')
+
 
 setup(
     # Project info
