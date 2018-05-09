@@ -15,9 +15,9 @@ ISRELEASED = False
 VERSION = '%d.%d.%d' % (MAJOR, MINOR, MICRO)
 QUALIFIER = ''
 
-DISTNAME = 'oggm-dummy-module'
+DISTNAME = 'oggmcontrib'
 LICENSE = 'GPLv3+'
-AUTHOR = 'oggm Developers'
+AUTHOR = 'OGGM Developers'
 AUTHOR_EMAIL = 'some.contributor@contribute.oggm'
 URL = 'http://oggm.org'
 CLASSIFIERS = [
@@ -34,9 +34,9 @@ CLASSIFIERS = [
         'Programming Language :: Python :: 3.6',
     ]
 
-DESCRIPTION = 'Open Global Glacier Model - example module'
+DESCRIPTION = 'Open Global Glacier Model - example external package'
 LONG_DESCRIPTION = """This repository shows how you can develop
-an external module for OGGM and keep control over it without having to 
+an external package for OGGM and keep control over it without having to 
 put your code on the main repository.
 
 Links
@@ -68,9 +68,9 @@ if not ISRELEASED:
 
     if pipe is None or pipe.returncode != 0:
         # no git, or not in git dir
-        if path.exists('dummy-module/version.py'):
+        if path.exists('oggmcontrib/version.py'):
             warnings.warn("WARNING: Couldn't get git revision, using existing "
-                          "dummy-module/version.py")
+                          "oggmcontrib/version.py")
             write_version = False
         else:
             warnings.warn("WARNING: Couldn't get git revision, using generic "
@@ -101,7 +101,7 @@ short_version = '%s'
 isreleased = %s
 """
     if not filename:
-        filename = path.join(path.dirname(__file__), 'dummy-module',
+        filename = path.join(path.dirname(__file__), 'oggmcontrib',
                              'version.py')
 
     a = open(filename, 'w')

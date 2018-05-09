@@ -1,4 +1,4 @@
-""" Tasks available in the dummy-module
+""" Tasks available in the oggmcontrib package
 
 """
 import logging

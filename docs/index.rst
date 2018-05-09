@@ -1,13 +1,16 @@
-.. image:: docs/_static/logo.png
+.. image:: _static/logo.png
 
 |
+
+An example repository for external OGGM packages
+------------------------------------------------
 
 This repository shows how you can develop
 an external package for OGGM and keep control over it without having to
 put your code on the main OGGM repository.
 
 Why would I want to do that?
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ideally, we would have your package added to the main codebase: this ensures
 consistency of the code and continuous testing. However, there are several
@@ -28,7 +31,7 @@ Before writing your own package we recommend to contact us to discuss the best
 path to follow in your specific case.
 
 How does this package work?
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This package is a template. It implements two very simple use cases:
 
@@ -46,8 +49,18 @@ it as a template for your own project. You can install it locally with
     pip install -e .
 
 
+Examples
+~~~~~~~~
+
+.. toctree::
+    :maxdepth: 1
+
+    inversion-task
+    mass-balance
+
+
 Get in touch
-------------
+~~~~~~~~~~~~
 
 - View the source code `on GitHub`_.
 - Report bugs or share your ideas on the `issue tracker`_.
