@@ -35,22 +35,28 @@ How does this package work?
 
 This package is a template. It implements two very simple use cases:
 
-- adding a new "bed inversion" task based on volume-area-scaling but using the
-  OGGM preprocessing workflow
-- using a custom mass-balance model and apply it to OGGM's ice-dynamics model
+- :ref:`inversion-task` based on volume-area-scaling
+  but using the OGGM preprocessing workflow
+- :ref:`mass-balance` and apply it to OGGM's ice dynamics model
 
-You can install this custom package with:
+
+Installation, usage
+~~~~~~~~~~~~~~~~~~~
+
+You can install this custom package with::
 
      pip install git+https://github.com/OGGM/oggmcontrib.git
 
-However, what you'd probably like to do is to `fork <https://help.github.com/articles/fork-a-repo/>`_ this repository and use
-it as a template for your own project. You can install it locally with
+However, what you'd probably like to do is to `fork <https://help.github.com/articles/fork-a-repo/>`_
+this repository and use it as a template for your own project.
+
+Once available locally, you can install it in development mode with::
 
     pip install -e .
 
 
-Examples
-~~~~~~~~
+Index
+~~~~~
 
 .. toctree::
     :maxdepth: 1
