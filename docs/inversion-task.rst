@@ -1,7 +1,7 @@
 .. _inversion-task:
 
 Adding an ice thickness inversion task
-======================================
+--------------------------------------
 
 This example illustrates the concept of `entity tasks`_ by implementing
 a new task for the ice thickness inversion. We are therefore using
@@ -78,6 +78,8 @@ And plot it:
    @savefig plot_thick_1.png width=80%
    plt.colorbar(label='Thick [m]');
 
+Note that in this task we took the ice divide into account. The ice thickness
+is very unrealistic of course, but so is our simple method.
 
 We can use the keyword arguments just like a regular function of course:
 
