@@ -7,7 +7,7 @@ pyproj
 rasterio
 Pillow
 geopandas
-netcdf4==1.5.1.2
+netcdf4==1.2.9
 scikit-image
 configobj
 joblib
