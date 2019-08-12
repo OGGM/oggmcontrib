@@ -8,12 +8,13 @@ from oggm import workflow
 
 # Set up the input data for this example
 cfg.initialize()
-cfg.PATHS['working_dir'] = oggm.gettempdir('oggm_wd')
+cfg.PATHS['working_dir'] = oggm.utils.get_temp_dir('oggm_wd')
 cfg.PATHS['dem_file'] = get_demo_file('srtm_oetztal.tif')
 cfg.PATHS['climate_file'] = get_demo_file('histalp_merged_hef.nc')
 cfg.set_intersects_db(get_demo_file('rgi_intersect_oetztal.shp'))
 
 # Set up the run parameters
+cfg.PARAMS['baseline_climate'] = 'CUSTOM'
 cfg.PARAMS['run_mb_calibration'] = True
 cfg.PARAMS['border'] = 80
 
