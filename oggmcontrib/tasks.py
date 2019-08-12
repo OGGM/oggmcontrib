@@ -50,7 +50,7 @@ def distance_from_border(gdir,  sqrt=False):
     gdfi = gpd.GeoDataFrame(columns=['geometry'])
     if gdir.has_file('intersects'):
         # read and transform to grid
-        gdf = gpd.read_file(gdir.get_filepath('intersects'))
+        gdf = gdir.read_shapefile('intersects')
         salem.transform_geopandas(gdf, gdir.grid, inplace=True)
         gdfi = pd.concat([gdfi, gdf[['geometry']]])
 

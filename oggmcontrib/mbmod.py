@@ -2,7 +2,8 @@
 import numpy as np
 import netCDF4
 from oggm.core.massbalance import MassBalanceModel
-from oggm.cfg import SEC_IN_YEAR, RHO
+from oggm import cfg
+from oggm.cfg import SEC_IN_YEAR
 
 
 class RandomLinearMassBalance(MassBalanceModel):
@@ -41,6 +42,7 @@ class RandomLinearMassBalance(MassBalanceModel):
         self.valid_bounds = [-1e4, 2e4]  # in m
         self.grad = grad
         self.sigma_ela = sigma_ela
+        self.hemisphere = 'nh'
         self.rng = np.random.RandomState(seed)
 
         # Decide on a reference ELA
@@ -69,11 +71,11 @@ class RandomLinearMassBalance(MassBalanceModel):
         self.ela_h_per_year[year] = ela_h
         return ela_h
 
-    def get_annual_mb(self, heights, year=None):
+    def get_annual_mb(self, heights, year=None, fl_id=None):
 
         # Compute the mass-balance gradient
         ela_h = self.get_random_ela_h(year)
         mb = (np.asarray(heights) - ela_h) * self.grad
 
         # Convert to units of [m s-1] (meters of ice per second)
-        return mb / SEC_IN_YEAR / RHO
+        return mb / SEC_IN_YEAR / cfg.PARAMS['ice_density']
