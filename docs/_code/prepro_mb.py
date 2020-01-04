@@ -8,7 +8,7 @@ from oggm import workflow
 
 # Set up the input data for this example
 cfg.initialize()
-cfg.PATHS['working_dir'] = oggm.utils.get_temp_dir('oggm_wd')
+cfg.PATHS['working_dir'] = oggm.utils.get_temp_dir('oggmcontrib_mb')
 cfg.PATHS['dem_file'] = get_demo_file('srtm_oetztal.tif')
 cfg.PATHS['climate_file'] = get_demo_file('histalp_merged_hef.nc')
 cfg.set_intersects_db(get_demo_file('rgi_intersect_oetztal.shp'))

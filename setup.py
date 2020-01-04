@@ -16,8 +16,8 @@ VERSION = '%d.%d.%d' % (MAJOR, MINOR, MICRO)
 QUALIFIER = ''
 
 DISTNAME = 'oggmcontrib'
-LICENSE = 'GPLv3+'
-AUTHOR = 'OGGM Developers'
+LICENSE = 'BSD-3-Clause'
+AUTHOR = 'OGGM Contributors'
 AUTHOR_EMAIL = 'some.contributor@contribute.oggm'
 URL = 'http://oggm.org'
 CLASSIFIERS = [
@@ -26,12 +26,11 @@ CLASSIFIERS = [
         'Development Status :: 3 - Alpha',
         # Indicate who your project is intended for
         'Intended Audience :: Science/Research',
-        'License :: OSI Approved :: GNU General Public License ' +
-        'v3 or later (GPLv3+)',
+        'License :: OSI Approved :: BSD License',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ]
 
 DESCRIPTION = 'Open Global Glacier Model - example external package'
@@ -163,7 +162,7 @@ setup(
     # What does your project relate to?
     keywords=['geosciences', 'glaciers', 'climate', 'gis'],
     # We are a python 3 only shop
-    python_requires='>=3.4',
+    python_requires='>=3.5',
     # Find packages automatically
     packages=find_packages(exclude=['docs']),
     # Decided not to let pip install the dependencies, this is too brutal

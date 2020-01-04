@@ -5,7 +5,7 @@ from oggm.utils import get_demo_file
 
 # Set up the input data for this example
 cfg.initialize()
-cfg.PATHS['working_dir'] = oggm.utils.get_temp_dir('oggm_wd')
+cfg.PATHS['working_dir'] = oggm.utils.get_temp_dir('oggmcontrib_inv')
 cfg.PATHS['dem_file'] = get_demo_file('srtm_oetztal.tif')
 cfg.set_intersects_db(get_demo_file('rgi_intersect_oetztal.shp'))
 
