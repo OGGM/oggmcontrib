@@ -71,7 +71,7 @@ class RandomLinearMassBalance(MassBalanceModel):
         self.ela_h_per_year[year] = ela_h
         return ela_h
 
-    def get_annual_mb(self, heights, year=None, fl_id=None):
+    def get_annual_mb(self, heights, year=None, fl_id=None, fls=None):
 
         # Compute the mass-balance gradient
         ela_h = self.get_random_ela_h(year)

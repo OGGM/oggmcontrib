@@ -17,6 +17,7 @@ cfg.set_intersects_db(get_demo_file('rgi_intersect_oetztal.shp'))
 cfg.PARAMS['baseline_climate'] = 'CUSTOM'
 cfg.PARAMS['run_mb_calibration'] = True
 cfg.PARAMS['border'] = 80
+cfg.PARAMS['use_multiprocessing'] = True
 
 # Glacier directory for Hintereisferner in Austria
 entity = gpd.read_file(get_demo_file('Hintereisferner_RGI5.shp')).iloc[0]

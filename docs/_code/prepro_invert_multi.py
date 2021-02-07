@@ -4,6 +4,7 @@ rgidf = gpd.read_file(rgi_file)
 
 # Use multiprocessing to apply the OGGM tasks and the new task to all glaciers
 from oggm import workflow
+cfg.PARAMS['use_multiprocessing'] = True
 gdirs = workflow.init_glacier_regions(rgidf)
 workflow.execute_entity_task(tasks.glacier_masks, gdirs)
 # Yes, also your new task!
