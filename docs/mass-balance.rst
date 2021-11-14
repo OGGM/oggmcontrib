@@ -74,8 +74,8 @@ it for 300 years:
 
 .. ipython:: python
 
-   from oggm.core.flowline import robust_model_run
-   robust_model_run(gdir, mb_model=mbmod, ys=0, ye=300);
+   from oggm.core.flowline import flowline_model_run
+   flowline_model_run(gdir, mb_model=mbmod, ys=0, ye=300);
 
 The model stored its output in standard NetCDF files. Let's just have a look
 a it!
